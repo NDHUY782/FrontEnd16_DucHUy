@@ -1,0 +1,9 @@
+.BOX {
+    background-color: blueviolet;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    margin-left: 25%;
+    line-height: 500px;
+    font-family: 'Edu SA Beginner', cursive;
+}
