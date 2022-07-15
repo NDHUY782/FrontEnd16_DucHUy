@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.BOX {
+    background-color: orange;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    font-size: 0px;
+
+}
+.box-left {
+    background-color: lightgreen;
+
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+    border: 3px solid black;
+    font-size: 15px;
+
+}
+.box-right {
+    background-color: lightskyblue;
+    width: 70%;
+    height: 50px;
+    font-size: 15px;
+    display: inline-block;
+    border: 3px solid red;
+
+}

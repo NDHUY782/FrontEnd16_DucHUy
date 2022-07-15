@@ -1,0 +1,22 @@
+.BOX {
+    background-color: rgb(205, 230, 84);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.box-big {
+    background-color: black;
+    margin-top: 5px;
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.box-small {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
