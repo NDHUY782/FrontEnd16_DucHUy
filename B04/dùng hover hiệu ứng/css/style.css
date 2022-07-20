@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+}
+/* .container {
+    position: relative;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+} */
+figure {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 500px;
+    height: 379px;
+    cursor: pointer;
+    text-align: center;
+}
+img {
+    padding-top: 15px;
+    transform: translate3d(0,-30px,0);
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    opacity: 0.8;
+    transition: opacity 0.55s, transform 0.35s;
+}
+figcaption {
+    top: 0;
+    left: 0;
+    padding: 100px;
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+}
+h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 70;
+    transition: opacity 0.55s, transform 0.35s;
+}
+span {
+    font-weight: 500;
+    font-weight: bold;
+}
+ p {
+    padding: 0.2em 15px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.55s, transform 0.35s;
+}
+
+figcaption::before {
+    transform: translateX(-50%);
+    margin: 15px 0;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    transition-duration: 0.8s;
+    transition: opacity 0.35s, transform 0.35s;
+ }
+figcaption::after {
+    transform: translateY(-50%);
+    margin: 0 15px;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 2px solid #fff;
+    border-left:2px solid #fff;
+    transition-duration: 0.8s;
+    transition: opacity 0.35s, transform 0.35s;
+ }
+
+figcaption:hover::after {
+    opacity: 0.5; 
+    transition-duration: 0.8s;
+    transform:translateY(1%) ;
+    transform:translateY(1.5%) ;
+ }
+figcaption:hover::before {
+    opacity: 0.5; 
+    transition-duration: 0.8s;
+    transform:translateX(1.5%) ;
+    transform:translateY(1.5%) ;
+ }
+ figure.effect-form:hover p {
+    transform: translateY(100%);
+    transition: opacity 0.55s, transform 0.35s;
+    opacity: 1;
+}
+figure.effect-form:hover h2 {
+    transform: translateY(100%);
+    transition: opacity 0.55s, transform 0.35s;
+    opacity: 1;
+}
+figure.effect-form:hover img {
+    transform: translate3d(0,0px,0);
+    transition: opacity 0.55s, transform 0.35s;
+    
+}

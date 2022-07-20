@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    margin: 40px auto;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    line-height: 400px;
+    font:  Arial;
+    font-size: 30px;
+    color: white;
+    position: relative;
+
+}
+.box::before {
+    transform: translate(-77%,-6%);
+    height: 40%;
+    width: 40%;
+    content: "";
+    background-color: rgb(34, 186, 237);
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    z-index: -1;
+}
+.box::after {
+    transform: translate(-22%,157%);
+    height: 40%;
+    width: 40%;
+    content: "";
+    background-color: rgb(34, 186, 237);
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    z-index: -1;
+}
+
+

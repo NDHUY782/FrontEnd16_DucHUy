@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 100px;
+    max-width: 1200px;
+    text-align: center;
+}
+button {
+    border: 1px solid #888;
+    padding: 15px 15px ;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button::after {
+    height:40px;
+    width: 200%;
+    transform:rotate(135deg) translate(50%,360%) ;
+    content: "";
+    background-color: rgb(34, 186, 237);
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    transition-duration: 0.8s;
+    opacity: 0.1;
+}
+button:hover::after {
+    opacity: 0.1;
+    transition-duration: 0.8s;
+    transform:rotate(135deg) translate(0%,-150%) ;
+ }
