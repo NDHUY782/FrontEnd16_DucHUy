@@ -64,6 +64,7 @@ button {
     background-color: blue;
     color: #fff;
     border-radius: 5px;
+    cursor: pointer;
 }
 .icon {
     padding-top: 10px;
