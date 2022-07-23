@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.box1 {
+    width: 40%;
+    
+}
+img {
+    padding-top: 20px;
+}
+.content1 {
+    line-height: 2;
+    padding-top: 5px;
+}
+p {
+    color: #888;
+}
+a {
+    color: #888;
+    text-decoration: none;
+}
+div .box1 .content1 a {
+    color: #fff;
+}
+div .box1 .content1 h2 {
+    padding-top: -100px;
+}
+.content2 {
+    line-height: 2;
+    padding-top: 5px;
+}
+.content3 {
+    line-height: 2;
+    padding-top: 5px;
+}
+
+ul li {
+    line-height: 2;
+    display: inline-block;
+
+}
+form {
+    line-height: 2;
+}
+input {
+    border-radius: 7px;
+    height: 30px;
+    outline: 0;
+}
+button {
+    height: 30px;
+    width: 70px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+}
+.icon {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.fb {
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: blue;
+}
+.ytb {
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: red;
+}
+div .box2 .content2 p :hover {
+    color: #fff;
+}
+div .box2 .content3 p :hover {
+    color: #fff;
+}

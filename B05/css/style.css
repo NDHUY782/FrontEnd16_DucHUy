@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #fff;
+} */
+img {
+    max-width: 1200px;
+    display: block ;
+    position: relative;
+
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: ;
+    position: absolute;
+}
+.form-content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.auth-button {
+    padding: 15px 5px;
+    position: absolute; 
+    border-radius: 45px;
+    border: 2px solid #fff;
+}
+.auth-button {
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 15px 5px;
+    position: absolute; 
+    border-radius: 45px;
+    border: 2px solid #fff;
+}
+.form-button {
+    display: flex;
+    justify-content: space-between;
+}
+.button-right {
+    border: none;
+    color: #fff;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-550%);
+
+}
+.button-left {
+    border: none;
+    color: #fff;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-550%);
+    
+}
+.icon {
+    text-indent: 3px;
+    display: flex;
+    transform: translateY(-500%);
+    justify-content: center;
+    
+}
+.fa-solid:nth-child(1), .fa-solid:nth-child(3) {
+    color: white;
+}
+ .fa-solid:nth-child(2)  {
+    color: rgb(143, 187, 132);
+}
+.auth-button:hover {
+    background-color:rgb(140, 129, 242) ;
+}
