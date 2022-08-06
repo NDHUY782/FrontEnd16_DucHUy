@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+.start {
+    display: flex;
+    gap: 20px;
+    margin: 0px 20px;
+    position: relative;
+}
+.table_yellow {
+    margin-top: 30px;
+    background-color: yellow;
+    width: 20%;
+    height: 200px;
+}
+.table_big {
+    margin-left: 100px;
+    background-color: yellowgreen;
+    width: 50%;
+    height: 500px;
+}
+.table_small {
+    margin-top: 100px;
+    background-color: red;
+    top: 100px;
+    width: 30%;
+    height: 200px;
+
+}
+.end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.chair {
+}
+.tree {
+
+}
+.brick {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+.color {
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(93, 61, 61);
+}
