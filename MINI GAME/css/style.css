@@ -1,0 +1,120 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid black;
+    background-color:rgba(129, 116, 116, 0.748) ;
+    margin: 0 auto;
+    width: 900px;
+
+}
+h1 {
+    text-align: center;
+    color: red;
+    font-family: 'Courier New', Courier, monospace  ;
+}
+
+.form_play {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.form_number {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 14px 11px;
+    width: 53%;
+    border: 2px solid black;
+}
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 14px 11px;
+} 
+button {
+    width: 70px;
+    height: 50px;
+}
+
+
+.from_notice {
+    width: 38%;
+    border: 2px solid black;
+}
+.form_notice_game {
+    padding: 0 20px;
+}
+.title {
+    display: flex;
+
+}
+
+.box {
+    width: 30%;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box_live {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid black
+}
+
+.Wrong {
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:100
+}
+.from_notice .title p {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+li {
+    list-style: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p {
+
+    color: blue;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.end {
+    display: flex;
+    width: 40%;
+    height: 50px;
+    background-color: green;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form_click button {
+    background-color: yellow;
+}

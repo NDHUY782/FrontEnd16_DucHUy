@@ -12,67 +12,68 @@ const handleToggleForm =(open = true) => {
     }
 }
 
-btnAddTask.addEventListener('click', function () {
-    if (!taskName.value) {
-        alert('Vui Lòng Nhập')
-    }
-    let taskId = this.getAttribute('id')
-    let tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
-    let task = {name:taskName.value}
+// function editTask(id) {
+//     let tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
+//     if (tasks.length > 0) {
+//         taskName.value = tasks[id].name
+//         btnAddTask.setAttribute('id', id)
+//     }
+// }
 
-    if (taskId == 0 || taskId) {
-        tasks[taskId] = task
-        this.removeAttribute('id')
-    } else {tasks.push({name:taskName.value })}
-    // let tasks = []
-
-    taskName.value = ''
-
-    localStorage.setItem('tasks', JSON.stringify(tasks))
-
-    
-    let select = document.getElementById('inputDs')
-    let text = select.options[select.selectedIndex].text
-    
-
-    renderTasks(tasks)
-
-})  
-
-function editTask(id) {
-    let tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
-    if (tasks.length > 0) {
-        taskName.value = tasks[id].name
-        btnAddTask.setAttribute('id', id)
-    }
-}
-
-function deleteTask(id) {
-    if(confirm('Bạn có chắc chắn muốn xóa không?')){
-        let tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
-        tasks.splice(id,1)
-        localStorage.setItem('tasks', JSON.stringify(tasks))
-        renderTasks(tasks)
+// function deleteTask(id) {
+//     if(confirm('Bạn có chắc chắn muốn xóa không?')){
+//         let tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []
+//         tasks.splice(id,1)
+//         localStorage.setItem('tasks', JSON.stringify(tasks))
+//         renderTasks(tasks)
         
-    }
-}
+//     }
+// }
 
 
-function renderTasks(tasks = []) {
-    let content = '<tr>'
+// function renderTasks(tasks = []) {
+//     let content = '<tr>'
 
-    tasks.forEach((task,index) => {
-        content += `<td> <td class="text-center">1</td>
-        <td>${task.name}</td>
-        <td class="text-center"><span class="label label-danger">High</span></td>
-		<td>
-			<button type="button" class="btn btn-warning" onclick ="editTask(${index})">Edit</button>
-			<button type="button" class="btn btn-danger" onclick ="deleteTask(${index})">Delete</button>
-		</td>
-        </td>`
-    })
+//     tasks.forEach((task,index) => {
+//         content += `<tr> <td class="text-center">1</td>
+//         <td>${task.name}</td>
+//         <td class="text-center"><span class="label label-danger">high</span></td>
+// 		<td>
+// 			<button type="button" class="btn btn-warning" onclick ="editTask(${index})">Edit</button>
+// 			<button type="button" class="btn btn-danger" onclick ="deleteTask(${index})">Delete</button>
+// 		</td>
+//         </tr>`
+//     })
 
-    content += '</tr>'
+//     content += '</tr>'
 
-    document.querySelector('#result').innerHTML = content
-}
+//     document.querySelector('#result').innerHTML = content
+// }
+
+// let getData = () => {
+//     data.id = randomString(6);
+//     nameTask =inputDs.value
+//     let level;
+//     if (inputDs.value == '0') {
+//         level = 'Small';
+//     } else if (inputDs.value == '1') {
+//         level = 'Medium'
+//         level.style.background = 'yellow'
+//     } else {
+//         level = 'High';
+//     }
+//     data.level = level;
+//     renderTasks();
+// }
+
+// const makeid = (length) =>  {
+//     var result           = '';
+//     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//     var charactersLength = characters.length;
+//     for ( var i = 0; i < length; i++ ) {
+//       result += characters.charAt(Math.floor(Math.random() * 
+//  charactersLength));
+//    }
+//    return result;
+// }
+

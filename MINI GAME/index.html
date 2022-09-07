@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./image/huhu.png"> 
+    <title>GAME</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TÌM SỐ BÍ MẬT</h1>
+        <div class="form_play">
+            <div id="n" class="form_number">
+                    
+            </div>
+            <div class="from_notice">
+                <div class="form_notice_game">
+                    <div class="title">
+                        <p>Số Lần Dự Đoán Cúa Bạn</p> 
+                        <div class="box">
+                            <div id="live_1" class="box_live"></div>
+                            <div id="live_2" class="box_live"></div>
+                            <div id="live_3" class="box_live"></div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div id="smaller" hidden class="resul">
+                            <!-- <div class="Wrong">Sai Rồi</div>
+                            <p> Số Của Bạn Nhỏ Hơn Số Bí Mật</p> -->
+                        </div>
+                        <div id="bigger" hidden class="resul">
+                            <!-- <div class="Wrong">Sai Rồi</div>
+                            <p> Số Của Bạn Lớn Hơn Số Bí Mật</p> -->
+                        </div>
+                        <div hidden class="resul">
+                            <div id="last_result" class="Wrong">Sai Rồi</div>
+                            <p>Bạn đã Thua - Số Bí Mật là 20</p>
+                        </div>
+    
+                    </form>
+                    <div hidden id="hidden_footer">
+                        <!-- <div  class="footer">
+                            <p >SỐ BÍ MẬT </p>
+                            <div class="end">20</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_click">
+            <ul>
+                <li><button id="play_start">BẮT ĐẦU</button></li>
+                <li><button id="play_again">CHƠI LẠI</button></li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="./js/const.js"></script>
+    <script src="./js/import.js"></script>
+    <script src="./js/model.js"></script>
+    <script src="./js/view.js"></script>
+</body>
+</html>

@@ -13,3 +13,10 @@ const ELEMENT_FORM_LEVEL            = document.getElementById('inputDs')
 
 let btnAddTask      = document.getElementById('btn_submit')
 let taskName        = document.getElementById('btn_name')
+
+//Show Data
+// let arrData = [
+//     { id: '1', nameTask: 'cgffgfgfg', level: 'Small' }
+//     { id: '2', nameTask: 'ghghghg', level: 'high' }
+//     { id: '3', nameTask: 'huyyyyy', level: 'medium' }
+// ]
